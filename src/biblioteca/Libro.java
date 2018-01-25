@@ -44,13 +44,7 @@ public class Libro extends Biblioteca implements Prestable{
     
     //comprobar si el libro está prestado o no
     public boolean prestado(){
-        boolean estado=false;
-        if(getPrestado()){
-            estado=true;
-        }else{
-            estado=false;
-        }
-        return estado;
+        return this.prestado;
     }
     
     //información completa del libro
